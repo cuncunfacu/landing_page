@@ -5,4 +5,101 @@
           box-sizing: border-box;
   font-family: 'Bodoni Moda', serif;
 }
+
+body {
+  background-color: #edede3;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Bodoni Moda", serif;
+  font-size: 28px;
+}
+
+p {
+  font-family: "Merriweather", serif;
+}
+
+.banner {
+  width: 100%;
+  height: 100%;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  background: #edede3;
+  padding-bottom: 5%;
+}
+
+.banner .banner--img img {
+  width: 100%;
+  height: 100%;
+}
+
+.services {
+  height: 90%;
+  width: 100%;
+  background: blue;
+}
+
+.services .services-container {
+  height: 100%;
+  width: 100%;
+  background: #edede3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.services .service {
+  height: 100%;
+  width: 20%;
+}
+
+.services .service img {
+  width: 90%;
+  height: 100%;
+}
+
+.services .service h2 {
+  color: red;
+  font-weight: bold;
+}
+
+footer {
+  display: -ms-grid;
+  display: grid;
+  height: 84px;
+  background-color: #353a3f;
+  -ms-grid-columns: 1fr (3)[1fr];
+      grid-template-columns: 1fr repeat(1fr, 3);
+  -ms-grid-rows: 30px 30px;
+      grid-template-rows: 30px 30px;
+  padding: 3px;
+  gap: 2px;
+}
+
+footer h5 {
+  color: white;
+  font-size: 18px;
+  margin-left: 1rem;
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 4;
+}
+
+footer i {
+  margin: 0rem 1.5rem;
+  -ms-grid-row: 2;
+      grid-row-start: 2;
+  grid-row-end: 3;
+  color: white;
+}
 /*# sourceMappingURL=styles.css.map */
